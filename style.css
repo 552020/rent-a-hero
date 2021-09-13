@@ -46,36 +46,13 @@ body {
   color: #333;
 }
 
-.section-hero {
-  background-color: #ffff80;
-  height: 100vh;
-  padding: 10.8rem 0;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-  align-items: center;
-  gap: 5%;
-
-  max-width: 130rem;
-  margin: 0 auto;
-}
+/* GENERAL REUSABLE COMPONENTS*/
 
 .heading-primary {
   font-size: 13.4rem;
   font-weight: 700;
   line-height: 1.05;
   font-family: "Bebas Neue", cursive;
-}
-
-.hero-description {
-  font-size: 1.9rem;
-  line-height: 1.4;
-  font-family: "Roboto Slab", serif;
-
-  margin-bottom: 5.6rem;
 }
 
 .btn:link,
@@ -126,6 +103,51 @@ body {
   margin-right: 1.6rem !important;
 }
 
+/********/
+/* HERO */
+
+.section-hero {
+  background-color: #ffff80;
+  height: 100vh;
+  padding: 10.8rem 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.hero-description {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  font-family: "Roboto Slab", serif;
+
+  margin-bottom: 5.6rem;
+}
+
 .hero-img {
   width: 100%;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffff80;
+  height: 9.6rem;
+  padding: 1rem 4.8rem;
+}
+
+.logo {
+  height: 8.5rem;
 }
