@@ -308,6 +308,7 @@ header {
 
 .section-testimonials {
   background-color: #fdf2e9;
+  background-color: #e6e6ff;
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
