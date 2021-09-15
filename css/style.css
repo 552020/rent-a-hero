@@ -185,3 +185,120 @@ header {
   width: 50%;
   margin: 0.5rem;
 }
+
+/*****************/
+/* HEROS SECTION */
+
+.section-heroes {
+  padding: 9.6rem 0;
+}
+
+.heroine {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+
+  transition: all 0.4s;
+}
+
+.heroine:hover {
+  /* transform: translate(2rem, 2rem); */
+  transform: translateY(-1.2rem);
+
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.heroine-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.heroine-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  color: #333;
+  border-radius: 100px;
+}
+
+.tag--fly {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+.tag--vegan {
+  background-color: #000;
+  color: #fff;
+}
+.tag--paleo {
+  background-color: #ffff00;
+}
+
+.heroine-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.heroine-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heroine-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.heroine-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  /* we tried with stroke and fill  */
+  color: #e67e22;
+  color: #ffff80;
+  color: #ff6666;
+}
+
+.heroine-icon:hover {
+  color: #ff0000;
+}
+
+.heroine-img {
+  width: 100%;
+}
+
+.all-heroines {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.list-icon {
+  font-size: 3rem;
+  color: #ff6666;
+}
