@@ -34,7 +34,7 @@
 /***********/
 /* HEADER */
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -284,25 +284,6 @@ header {
   font-size: 1.8rem;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-}
-
-.list-icon {
-  font-size: 3rem;
-  color: #ff6666;
-}
-
 /************************/
 /* TESTIMONIAL SECTION */
 
@@ -363,4 +344,116 @@ header {
 .gallery-item img:hover {
   /* transform: rotate(45deg); */
   transform: scale(1.1);
+}
+
+/********************/
+/* PRICING SECTION */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  padding: 4.8rem;
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #e6e6ff;
+  border: 2px solid #ffffcc;
+}
+
+.pricing-plan--complete {
+  background-color: #ffffcc;
+
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "best value";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  top: 6%;
+  right: -18.5%;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #ff6666;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-price em {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+/* we need this container cause we don't want modify the .list classes, since they are reusable components and also not the button as well*/
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.feature-icon {
+  color: #ff6666;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
 }
