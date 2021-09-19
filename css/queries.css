@@ -34,7 +34,7 @@
   }
 
   .heading-secondary {
-    font-size: 3.6rem;
+    font-size: 6.2rem;
   }
 
   .heading-tertiary {
@@ -75,10 +75,6 @@
     text-align: center;
   }
 
-  .delivered-meals {
-    justify-content: center;
-    margin-top: 3.2rem;
-  }
   /* 
     we center the image with text-align: center
     .hero-img-box {
