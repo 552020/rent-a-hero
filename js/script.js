@@ -13,6 +13,36 @@ btnNav.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+// Smooth scrolling since scroll-behaviour: smooth doesn't work in Safari
+
+const allLinks = document.querySelectorAll("a:link");
+console.log(allLinks);
+
+allLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    console.log(e);
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    // console.log(href);
+
+    // Scroll back to top - from Logo
+
+    if (href === "#") window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // Scroll to other link
+    if (href !== "#" && href.startsWith("#")) {
+      console.log(href);
+      const sectionEl = document.querySelector(href);
+      console.log(sectionEl);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+    // Close mobile nav
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
+  });
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
