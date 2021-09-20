@@ -523,13 +523,14 @@
                 waiting for you. Try them out today. You can cancel or pause
                 anytime. And the first booking is on us!
               </p>
-              <form action="#" class="cta-form">
+              <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
                     type="text"
                     placeholder="John Smith"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -539,12 +540,13 @@
                     id="email"
                     type="email"
                     placeholder="john-smith@me.com"
+                    name="email"
                     required
                   />
                 </div>
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select name="" id="select-where" required>
+                  <select name="select-where" id="select-where" required>
                     <option value="">Please choose one option</option>
                     <option value="friends">Friends of family</option>
                     <option value="youtube">YouTube video</option>
